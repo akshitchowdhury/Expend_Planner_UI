@@ -1,15 +1,15 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+// src/App.jsx
+import { Button, HStack } from '@chakra-ui/react';
 
 function App() {
- 
-  return ( 
-    <>
-      <p className='text-3xl'>Hello</p>
-    </>
-  )
+  return (
+    <div>
+      <HStack>
+      <Button>Click me</Button>
+      <Button>Click me</Button>
+    </HStack>
+    </div>
+  );
 }
 
-export default App
+export default App;
