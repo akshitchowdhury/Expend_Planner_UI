@@ -1,11 +1,13 @@
 import React from 'react'
+import { Button } from '../../components/ui/button'
+import { HStack } from '@chakra-ui/react'
 
 const Nav = () => {
   return (
     <div>
-      <p>
-      Navbar
-      </p>   
+    <HStack>
+    <Button>Button</Button>
+    </HStack>
     </div>
   )
 }
