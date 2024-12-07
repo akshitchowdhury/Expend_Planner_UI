@@ -7,7 +7,7 @@ const Home = () => {
         <>
     <div>
         <form>
-        <input />
+        <input type='number' placeholder='Enter month type'/>
         </form>
     </div>
     </>
