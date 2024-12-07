@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 
 const PaginationTwo = () => {
   
@@ -16,13 +16,32 @@ const PaginationTwo = () => {
   
     return (
     <div>
+    <table class="table-fixed">
+  <thead>
+    <tr>
+      <th>Sr No.</th>
+      <th>Products</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    
       {
         shopItems.map((item,index)=>(
             <>
-                <p>{item.title}</p>
+                <tr>
+                <td>{index+1}</td>
+                <td>{item.title}</td>
+                </tr>
             </>
         ))
       }
+     
+    
+    
+  </tbody>
+</table>
+      
     </div>
   )
 }
