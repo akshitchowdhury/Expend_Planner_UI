@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 const PaginationTwo = () => {
   const [shopItems, setShopItems] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+
   const itemsPerPage = 5;
 
   const fetchData = async () => {
@@ -53,7 +54,10 @@ const PaginationTwo = () => {
         </table>
       </div>
       <div className="flex justify-center mt-6 space-x-2">
-        {Array.from({ length: totalPages }, (_, index) => (
+      <button  onClick={() => setCurrentPage((prevPage) => Math.max(prevPage - 1, 1))}
+  className="bg-red-500 p-2 text-slate-700 rounded-md"> Prev Page 
+  </button>
+    {Array.from({ length: totalPages }, (_, index) => (
           <button
             key={index}
             onClick={() => handlePageChange(index + 1)}
@@ -66,6 +70,7 @@ const PaginationTwo = () => {
             {index + 1}
           </button>
         ))}
+        <button onClick={()=>setCurrentPage((nextPage)=> Math.min(nextPage+1,totalPages))} className='bg-red-500 p-2 text-slate-700 rounded-md'>Next Button</button>
       </div>
     </div>
   );
