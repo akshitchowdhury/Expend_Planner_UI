@@ -8,11 +8,17 @@ const PagomationThree = () => {
       method: 'GET',
     });
     const data = await response.json();
+
+    setItems(data.products);
   }
 
   return (
     <div>
-      
+      {
+        products.map((item) => {
+          return <div key={item.id}>{item.title}</div>;
+        })  
+      }
     </div>
   )
 }
