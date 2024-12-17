@@ -24,6 +24,7 @@ const PagomationThree = () => {
           <div key={item.id}>
           <p>{item.title}</p>
           <p>{item.description}</p>
+          <p>{item.category}</p>
           </div>;
           </>
           
