@@ -5,6 +5,7 @@ import Home from './component/Home/Home';
 import Nav from './component/Nav/Nav';
 import PaginationTest from './TestComponents/PaginationTest';
 import PaginationTwo from './TestComponents/PaginationTwo';
+import PagomationThree from './TestComponents/PagomationThree';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
     <Nav/>
     <Home/>
     {/* <PaginationTest/> */}
-    <PaginationTwo/>
+    <PagomationThree />
     </div>
   );
 }

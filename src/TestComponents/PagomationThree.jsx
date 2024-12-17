@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 
 const PagomationThree = () => {
 
@@ -12,11 +12,21 @@ const PagomationThree = () => {
     setItems(data.products);
   }
 
+  useEffect(() => {
+    fetchData();
+  }, []);
   return (
     <div>
       {
-        products.map((item) => {
-          return <div key={item.id}>{item.title}</div>;
+        items.map((item) => {
+          return 
+          <>
+          <div key={item.id}>
+          <p>{item.title}</p>
+          <p>{item.description}</p>
+          </div>;
+          </>
+          
         })  
       }
     </div>
