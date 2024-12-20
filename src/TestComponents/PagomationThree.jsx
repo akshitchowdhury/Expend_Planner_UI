@@ -20,6 +20,8 @@ const PagomationThree = () => {
   return (
     <div className="container mt-5">
       <h2 className="text-center mb-4">Products Table</h2>
+      <label>Search product </label>
+      <input type="text"/>
       <Table striped bordered hover>
         <thead>
           <tr>
