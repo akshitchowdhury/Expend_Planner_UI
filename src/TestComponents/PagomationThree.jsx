@@ -38,6 +38,7 @@ const PagomationThree = () => {
               <td>{item.title}</td>
               <td>{item.description}</td>
               <td>{item.category}</td>
+              <td>{item.category}</td>
             </tr>
           ))}
         </tbody>
