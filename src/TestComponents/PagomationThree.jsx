@@ -29,6 +29,7 @@ const PagomationThree = () => {
             <th>Title</th>
             <th>Description</th>
             <th>Category</th>
+            <th>Category</th>
           </tr>
         </thead>
         <tbody>
