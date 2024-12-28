@@ -36,6 +36,7 @@ const PaginationTwo = () => {
             <tr className="bg-gray-200 text-gray-700 text-left">
               <th className="p-4 text-sm font-medium">Sr No.</th>
               <th className="p-4 text-sm font-medium">Products</th>
+              <th className="p-4 text-sm font-medium">Products</th>
             </tr>
           </thead>
           <tbody>
